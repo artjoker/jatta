@@ -1,0 +1,571 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Jatta Ecommerce mobile template</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">Mobile and Tablet Responsive Template</h3>
+		
+		<hr>
+		
+		<h1 class="center">Jatta Ecommerce mobile template</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 08/06/2014<br>
+					By: Jatta<br>
+					Email: <a href="mailto:3537000@gmail.com">3537000@gmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://codecanyon.net/user/suprom">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+<li><a href="#Color">How to change the color of theme</a></li>
+<li><a href="#Elements">Elements and page decoration</a></li>
+<li><a href="#Scripts">jQuery Features</a></li>
+<li><a href="#Typography">Typography Features</a></li>
+<li><a href="#How">How to add content</a></li>
+<li><a href="#Adress">How to change contact adress</a></li>
+
+		</ol>
+		
+		<hr>
+		
+		<a name="Color"><h3 id="htmlStructure"><strong>A) How to change the color of theme</strong></a></h3></a>
+		<div id="contentWrap">
+<div id="primaryContent">
+<ol>
+<li><p>Change the current class to the body.<br/>
+	Example: body class="blue_skin".</p>
+<li><p>Copy file style.css from folder thema_blue_skin/style, if you change color blue, and paste in you folder style.</p>
+<li><p>All the main color theme styles are collected at the beginning, if you wanted to change the color, make it a little different shade, you need to find an element with color, they are written with the inheritance of a class that is written in the body, and to change the color you want, for example,<br/>
+	.blue_skin #header {background: rgba(39,170,225,0.8);}
+</p></li>
+
+</ol>
+
+		
+		<a name="Elements"><h3 id="cssFiles"><strong>B) Elements and page decoration</strong></h3></a>
+
+		<div id="primaryContent">
+		<p align="center"><b>Sliders</b></p>
+		<p>Examle code slider:</p>
+		<pre class="html">  
+		&lt;div class="camera_wrap camera_blue_skin" id="camera_index"&gt;
+		    &lt;div data-src="images/slide1.jpg"&gt;&lt;/div&gt;
+		    &lt;div data-src="images/slide1.jpg"&gt;&lt;/div&gt;
+		    &lt;div data-src="images/slide1.jpg"&gt;&lt;/div&gt;
+		&lt;/div&gt;&lt;!-- #camera_index --&gt;
+		</pre>  
+		<p>Path to the image is written in the attribute data-src.</p>
+
+		<p>We have a large variety of sliders, check them out bellow! </p>
+<ol>
+<li>You can add a caption to the slide, just put a div with class "camera_caption" into the div above:
+<pre>  
+&lt;div data-src="images/slide1.jpg"&gt;
+	&lt;div class="camera_caption"&gt;The text of your caption&lt;/div&gt;
+&lt;/div&gt;
+</pre> 
+
+<li>You can also put some HTML elements into your slides. These elements must be wrapped into a div with position:absolute and they can be included in the transition effect too:
+<pre class="html">  
+&lt;div data-src="images/slide1.jpg"&gt;
+	&lt;div class="fadeIn camera_effected"&gt;The text of your html element&lt;/div&gt;
+&lt;/div&gt;
+</pre> 
+</li>
+
+<li>To include a video into your slideshow you must put an iframe into one of your slides:
+<pre class="html">  
+&lt;div data-src="images/slide1.jpg"&gt;
+	&lt;iframe src="http://player.vimeo.com/video/1084537" width="100%"
+	height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen
+	allowFullScreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</pre> 
+</li>
+</ol>
+<p align="center"><b>Lists on the page:</b></p>
+<p>Lists may be in the form of navigation, such as</p>
+<pre class="html">
+&lt;nav id="menu"&gt;
+	&lt;ul&gt;
+		&lt;li&gt;
+			&lt;a href="category.html"&gt;
+				&lt;span class="icon icon-Myicons-25"&gt;&lt;/span&gt;
+				&lt;span class="icon-go icon-Myicons-19"&gt;&lt;/span&gt;Electronics
+			&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;a href="category.html"&gt;
+				&lt;span class="icon icon-Myicons-26"&gt;&lt;/span&gt;
+				&lt;span class="icon-go icon-Myicons-19"&gt;&lt;/span&gt;Clothing
+			&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;a href="category.html"&gt;
+				&lt;span class="icon icon-Myicons-24"&gt;&lt;/span&gt;
+				&lt;span class="icon-go icon-Myicons-19"&gt;&lt;/span&gt;Souvenirs
+			&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;a href="category.html"&gt;
+				&lt;span class="icon icon-Myicons-23"&gt;&lt;/span&gt;
+				&lt;span class="icon-go icon-Myicons-19"&gt;&lt;/span&gt;Food
+			&lt;/a&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/nav&gt;
+</pre> 
+<p>You can make a list with no icons</p>
+<pre class="html">
+&lt;!-- group_list --&gt;
+&lt;div class="group_list delivery_option_list"&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href="map.html"&gt;&lt;em&gt;Boston&lt;/em&gt;
+			&lt;span class="icon-link icon-Myicons-02"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="map.html"&gt;&lt;em&gt;Chicago&lt;/em&gt;
+			&lt;span class="icon-link icon-Myicons-02"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="map.html"&gt;&lt;em&gt;New York&lt;/em&gt;
+			&lt;span class="icon-link icon-Myicons-02"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="map.html"&gt;&lt;em&gt;Dallas&lt;/em&gt;
+			&lt;span class="icon-link icon-Myicons-02"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="map.html"&gt;&lt;em&gt;Astin&lt;/em&gt;
+			&lt;span class="icon-link icon-Myicons-02"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="map.html"&gt;&lt;em&gt;Richmond&lt;/em&gt;
+			&lt;span class="icon-link icon-Myicons-02"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="map.html"&gt;&lt;em&gt;Kinston&lt;/em&gt;
+			&lt;span class="icon-link icon-Myicons-02"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="map.html"&gt;&lt;em&gt;Beaufort&lt;/em&gt;
+			&lt;span class="icon-link icon-Myicons-02"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;&lt;!-- group_list --&gt;
+</pre>
+<p align="center"><b>Buttons</b></p>
+<p>You can use big buttons with the help of class .btn_big, and with small class .btn_small.</p>
+<p>Color management add another class .btn_send - for the base color, regardless of the theme, and .sign-button - color yours theme</p>
+<pre class="html">
+&lt;a href="#" class="btn_big btn_send"&gt;Button&lt;/a&gt;
+&lt;a href="#" class="btn_small sign-button"&gt;Button&lt;/a&gt;
+</pre>
+<p>There are buttons with icons, example, on page tovar</p>
+<pre>
+&lt;div class="iten_line_btn"&gt;
+	&lt;a href="#" class="add_btn add_btn_cart js_add_btn_cart"&gt;
+	&lt;i class="icon icon-Myicons-16"&gt;&lt;/i&gt;&lt;span&gt;Add to cart&lt;/span&gt;&lt;/a&gt;
+	&lt;a href="#" class="add_btn add_btn_wish js_add_btn_wish"&gt;
+	&lt;i class="icon icon-Myicons-15"&gt;&lt;/i&gt;&lt;span&gt;Add to Whishlist&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;	
+</pre>
+<p>And small button with icon on page wishlist.html</p>
+<pre>
+&lt;a href="#" class="add_cart js_add_cart"&gt;
+&lt;span class="icon icon-Myicons-16"&gt;&lt;/span&gt;
+&lt;span class="text_cart"&gt;Add to cart&lt;/span&gt;
+&lt;/a&gt;
+</pre>
+<p align="center"><b>Forms</b></p>
+<p>You can use the form on the page:</p>
+<pre class="html">
+&lt;div class="form"&gt;&lt;!-- form --&gt;
+&lt;form action="#"&gt;
+	&lt;div class="row"&gt;
+		&lt;input class="inp_t" type="text" value="" placeholder="E-mail" name="email"/&gt;
+	&lt;/div&gt;
+	&lt;div class="row"&gt;
+		&lt;input class="inp_t" type="password" value="" placeholder="Password"
+		name="pass"/&gt;
+		&lt;a class="forgot_link fade" href="remind.html"&gt;Forgot?&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;button class="sign-button btn_small"&gt;Sign in&lt;/button&gt;
+	&lt;a href="join.html" class="link_form btn_small fade"&gt;Join&lt;/a&gt;
+&lt;/form&gt;
+&lt;/div&gt;&lt;!-- form --&gt;
+</pre>
+<p>You can add textarea in you form:</p>
+<pre class="html">
+&lt;div class="row"&gt;
+	&lt;textarea class="textar" name="massege" id="" cols="30" rows="10"
+	placeholder="Massage"&gt;&lt;/textarea&gt;
+&lt;/div&gt;
+</pre>
+<p align="center"><b>Fonts, icons, text</b></p>
+<p>All icons is graph.</p>
+<p>For performance reasons, all icons require a base class and individual icon class. To use, place the following code just about anywhere. Be sure to leave a space between the icon and text for proper padding.</p>
+<p>Icon classes cannot be directly combined with other components. They should not be used along with other classes on the same element. Instead, add a nested <span> and apply the icon classes to the <span></p>
+<p>All icons are collected in the font file, and are connected via @font-face</p>
+<pre class="html">
+@font-face {
+font-family: 'icomoon';
+src:url('fonts/icomoon.eot?r1tng9');
+src:url('fonts/icomoon.eot?#iefixr1tng9') format('embedded-opentype'),
+	url('fonts/icomoon.woff?r1tng9') format('woff'),
+	url('fonts/icomoon.ttf?r1tng9') format('truetype'),
+	url('fonts/icomoon.svg?r1tng9#icomoon') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+</pre>
+<p>Font has been generated using the site https://icomoon.io</p>
+<p>Initially style.css file has a list of classes for icons.</p>
+<pre class="html">
+...
+.icon-Myicons-03:before {
+	content: "\e602";
+}
+.icon-Myicons-04:before {
+	content: "\e603";
+}
+.icon-Myicons-05:before {
+	content: "\e604";
+}
+.icon-Myicons-06:before {
+	content: "\e605";
+}
+...
+</pre>
+<p>Example used:</p>
+<pre class="html">
+&lt;span class="icon icon-Myicons-29"&gt;&lt;/span&gt;
+</pre>
+<p align="center"><b>One item</b></p>
+<p>Insert container with item in your list ul</p>
+<pre class="html">
+&lt;li class="item"&gt;&lt;!-- item --&gt;
+	&lt;a href="tovar.html" class="fade"&gt;
+		&lt;em class="status s_new"&gt;New&lt;/em&gt;
+		&lt;span class="img_item"&gt;
+			&lt;img src="images/item.png" alt=""&gt;
+		&lt;/span&gt;
+		&lt;div class="info_item"&gt;
+			&lt;span class="title_item"&gt;Title item&lt;/span&gt;
+			&lt;p&gt;Information about item&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/a&gt;
+&lt;/li&gt;
+</pre>
+</div>
+
+	
+		<a name="Scripts">
+		<h3 id="javascript"><strong>C) jQuery Features</strong></h3></a>
+		
+		<div id="primaryContent">
+
+<p align="center"><b>Slider</b></p>
+<p>The site uses a plugin for slider camera <a href="http://www.pixedelic.com/plugins/camera/">http://www.pixedelic.com/plugins/camera/</a></p>
+<p>To call a slider needed element in your main.css prescribe the following:</p>
+<pre class="html">
+$('#camera_index').camera({
+    height: '65%',
+    loader: 'bar',
+    thumbnails: false,
+    hover: false,
+    opacityOnGrid: false
+});
+</pre>
+<p>The site developers have a lot of different settings</p>
+<p align="center"><b>Dropdown menus</b></p>
+<p>Submenus can have an infinite ammount of items! </p>
+<pre class="html">
+&lt;nav id="menu" class="category js_category"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+	&lt;a href="catalog.html"&gt;
+		&lt;span class="icon-go icon-Myicons-19"&gt;&lt;/span&gt;Tablets
+	&lt;/a&gt;
+	&lt;ul class="subcategory"&gt;
+	&lt;li&gt;&lt;a href="catalog.html"&gt;&lt;span class="icon-go icon-Myicons-02"&gt;&lt;/span&gt;Nokia&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="catalog.html"&gt;&lt;span class="icon-go icon-Myicons-02"&gt;&lt;/span&gt;Samsung&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="catalog.html"&gt;&lt;span class="icon-go icon-Myicons-02"&gt;&lt;/span&gt;HTC&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+</pre>
+<p>Jquery function is in the file main.js</p>
+<p align="center"><b>Toggles</b></p>
+
+<pre class="html">
+&lt;div class="row"&gt;
+	&lt;label class="left"&gt;Only in stock&lt;/label&gt;
+	&lt;input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox js_switch"
+	id="myonoffswitch" checked&gt;
+&lt;/div&gt;
+</pre>
+<p>To create a checkbox, call .iButton() on a jQuery element.</p>
+<pre>$(".js_switch").iButton();</pre>
+<pre>
+&lt;!-- The iButton script --&gt;
+&lt;script type='text/javascript' src='js/jquery.ibutton.js'&gt;&lt;/script&gt;	
+</pre>
+
+<p>Detailed documentation can be found on the website <a href="http://www.givainc.com/labs/ibutton_jquery_plugin.cfm">http://www.givainc.com/labs/ibutton_jquery_plugin.cfm</a></p>
+<p align="center"><b>Tabs</b></p>
+<p>Tabs are very easy to use but you must understand that tabs expand on a horizontal basis. Their title SHOULD not be big, as this will cause them to jump a row on devices such as nokias or blackberries that have lower screen sizes. We suggest using a page similar to <a href="http://www.responsinator.com/">http://www.responsinator.com/</a> to test your tabs. Usually 4 tabs, 5/6 letters in each will be exactly the right size.</p>
+<pre class="html">
+&lt;div class="wrap-tabs"&gt;
+	&lt;ul class="tabs clearfix"&gt;
+		&lt;li class="first"&gt;&lt;a href="#tab1"&gt;Tab 1&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=""&gt;&lt;a href="#tab2"&gt;Tab 2&lt;/a&gt;&lt;/li&gt;
+		&lt;li class="last"&gt;&lt;a href="#tab3"&gt;Tab 3&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;div class="tab_container"&gt;
+		&lt;div id="tab1" class="tab_content"&gt;
+			&lt;p&gt;
+				Tab 1 Text
+            		&lt;/p&gt;
+	        &lt;/div&gt;
+		&lt;div id="tab2" class="tab_content"&gt;
+			&lt;p&gt;
+				Tab 2 Text
+            		&lt;/p&gt;
+	        &lt;/div&gt;
+		&lt;div id="tab3" class="tab_content"&gt;
+			&lt;p&gt;
+				Tab 3 Text
+			&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<p>Jquery function is in the file main.js</p>
+<p align="center"><b>Checkboxes</b></p>
+<p>Checkbox examples can be found bellow, copy and paste them to create them</p>
+<pre class="html">
+&lt;div class="row"&gt;
+	&lt;label class="radio_sort one_radio js_radio_sort"&gt;
+        &lt;input type="checkbox" name="season" value="value"&gt;&lt;span&gt;&lt;/span&gt;
+            value
+    &lt;/label&gt;
+&lt;/div&gt;
+</pre>
+<p>On the filter status is another kind of checkbox</p>
+<pre class="html">
+&lt;div class="row"&gt;
+	&lt;label class="check_status js_status_label"&gt;
+	    &lt;input type="checkbox" name="sale" value="sale"&gt;&lt;span&gt;&lt;/span&gt;
+	        Sale
+	&lt;/label&gt;
+&lt;/div&gt;
+</pre>
+<p align="center"><b>Slider values</b></p>
+<p>Handles.<br/>
+The number of handles can be set using the start option. This option accepts an array of initial handle positions. Set one value for one handle, two values for two handles.</p>
+<p>Using HTML5 input elements</p>
+<pre class="html">
+&lt;div id="price_rang" class="price_range expand"&gt;
+	&lt;div class="range"&gt;&lt;/div&gt;
+	&lt;div class="range-fields"&gt;
+		&lt;span class="between"&gt;From&lt;/span&gt;
+		&lt;input class="input_start input-base" type="text"/&gt;$
+		&lt;span class="between"&gt;to&lt;/span&gt;
+		&lt;input class="input_end input-base"  type="text"/&gt;$
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<p>To create a slider, call .noUiSlider() with your options on a jQuery element.</p>
+<pre>
+$('.price_range .range').noUiSlider({
+    range: [0,20000],
+    start: [0,20000],
+    handles: 2,
+    connect: true,
+    serialization: {
+        to: [ $('.input_start'), $('.input_end') ],
+        resolution: 1,
+    }        
+});
+</pre>
+<p>Detailed description and settings can be found on the website of the developers <a href="http://refreshless.com/nouislider/">http://refreshless.com/nouislider/</a></p>
+<pre>
+&lt;!-- The noUiSlider script --&gt;
+&lt;script type='text/javascript' src='js/jquery.nouislider.min.js'&gt;&lt;/script&gt;	
+</pre>
+<p align="center"><b>Star Rating</b></p>
+<p>Detailed description and settings can be found on the website <a href="http://wbotelhos.com/raty">http://wbotelhos.com/raty</a></p>
+<p>Example:</p>
+<pre class="html">
+&lt;div class="js_star stars" data-rating="4"&gt;&lt;/div&gt;
+</pre>
+<p>Call function:</p>
+<pre>
+$('.js_star').raty({
+  readOnly : true,
+    score: function() {
+    return $(this).attr('data-rating');
+  }
+});
+</pre>
+<p>File jquery.raty.min.js, and images star-off.png, star-on.png</p>
+</div>
+</div>
+</div>
+		
+		
+<a name="Typography"><h3 id="psdFiles"><strong>D) Typography Features</strong></h3></a>
+
+<div id="primaryContent">
+<p align="center"><b>Text Alignments</b></p>
+<pre class="html">
+&lt;div class="container_content"&gt;
+	&lt;div class="content"&gt;
+		&lt;div class="content_box"&gt;
+			&lt;p class="left"&gt;&lt;strong&gt;Aligne Left&lt;/strong&gt;&lt;/p&gt;
+			&lt;p class="left"&gt;Stunning. Innovative. Simply ispired.
+			  The Samsung Galaxy S5 is technology
+			  that truly impacts your life. Make split-
+			 -second moment yours. Watch HD
+			  movies and games roar to life. Or track
+			  your life...&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class="content_box"&gt;
+			&lt;p class="center"&gt;&lt;strong&gt;Aligne Center&lt;/strong&gt;&lt;/p&gt;
+			&lt;p class="center"&gt;Stunning. Innovative. Simply ispired.
+			  The Samsung Galaxy S5 is technology
+			  that truly impacts your life. Make split-
+			 -second moment yours. Watch HD
+			  movies and games roar to life. Or track
+			  your life...&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class="content_box last"&gt;
+			&lt;p class="right"&gt;&lt;strong&gt;Aligne Right&lt;/strong&gt;&lt;/p&gt;
+			&lt;p class="right"&gt;Stunning. Innovative. Simply ispired.
+			  The Samsung Galaxy S5 is technology
+			  that truly impacts your life. Make split-
+			 -second moment yours. Watch HD
+			  movies and games roar to life. Or track
+			  your life...&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<p align="center"><b>Quote styeles</b></p>
+<pre class="html">
+&lt;div class="content"&gt;	
+	&lt;div class="content_box"&gt;
+		&lt;p class="quete"&gt;Good thing. Took a discount. Pleased with the price
+					and quality. The material is good, everything is fine.
+					Recommend to all!&lt;/p&gt;
+		&lt;div class="row_user"&gt;
+			&lt;span class="name_user"&gt;Ronny&lt;/span&gt; - 
+			&lt;span class="date_rev"&gt;29 may 2014&lt;/span&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<p align="center"><b>List styeles</b></p>
+<p>Ordered list</p>
+<pre class="html">
+&lt;div class="content"&gt;
+	&lt;div class="content_box"&gt;
+		&lt;ol&gt;
+			&lt;li&gt;Text list&lt;/li&gt;
+			&lt;li&gt;Text list&lt;/li&gt;
+			&lt;li&gt;Text list&lt;/li&gt;
+			&lt;li&gt;Text list&lt;/li&gt;
+			&lt;li&gt;Text list&lt;/li&gt;
+			&lt;li&gt;Text list&lt;/li&gt;
+		&lt;ol&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<p>Unordered list</p>
+<pre class="html">
+&lt;div class="content"&gt;
+	&lt;div class="content_box"&gt;
+		&lt;ul&gt;
+			&lt;li&gt;Text list&lt;/li&gt;
+			&lt;li&gt;Text list&lt;/li&gt;
+			&lt;li&gt;Text list&lt;/li&gt;
+			&lt;li&gt;Text list&lt;/li&gt;
+			&lt;li&gt;Text list&lt;/li&gt;
+			&lt;li&gt;Text list&lt;/li&gt;
+		&lt;ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<p align="center"><b>Review</b></p>
+<pre class="html">
+&lt;div class="content_box"&gt;
+	&lt;div class="one_review"&gt;
+		&lt;div class="line_star"&gt;
+			&lt;div class="js_star stars" data-rating="4"&gt;&lt;/div&gt;
+			&lt;div class="row_user"&gt;
+				&lt;span class="name_user"&gt;Ronny&lt;/span&gt; - 
+				&lt;span class="date_rev"&gt;29 may 2014&lt;/span&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="text_rev"&gt;
+			&lt;p&gt;Good thing. Took a discount. Pleased with the price
+				and quality. The material is good, everything is fine.
+				Recommend to all!&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<p align="center"><b>Circles</b></p>
+<pre class="html">
+&lt;div class="content action_box"&gt;
+	&lt;div class="wrap_box"&gt;
+		&lt;div class="wrap_circle"&gt;
+			&lt;a href="#" class="circle reg"&gt;Circle 1&lt;/a&gt;
+			&lt;a href="#" class="circle new"&gt;Circle 2&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;	
+</pre>
+</div>
+
+
+
+<a name="How"><h3 id="psdFiles"><strong>E) How to add content</strong></h3></a>
+<div id="primaryContent">
+<p>Container: a container is the main housing div for your template, every item you'll be inserting in a template will be added inside one wrapper, called container &lt;div class="container"&gt;&lt;/div&gt;</p>
+<p>Content: a content is a wrapper for content in your template, add &lt;div class="content"&gt;&lt;/div&gt;
+<pre class="html">
+&lt;div class="container"&gt;
+	&lt;div class="content"&gt;
+	    	&lt;p&gt;This is a demo&lt;/p&gt;
+	&lt;div&gt;
+&lt;div&gt;	
+</pre>
+</div>
+
+<a name="Adress"><h3 id="psdFiles"><strong>F) How to change contact adress</strong></h3></a>
+<div id="primaryContent">
+	<p>File contact.html has contacts data, edit it and replace the address there with yours! It is also possible to insert the iframe with map. Can make a map with its location, and insert it.</p>
+</div>
+		
+		<p class="append-bottom alt large"><strong>Jatta</strong></p>
+		<p><a href="index.html">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
+
